@@ -3,7 +3,7 @@ from langchain import PromptTemplate
 #from langchain.llms import OpenAI #so vananenud rida ning asendatud allolevaga
 from langchain_community.llms import OpenAI
 import os
-
+#OUTPUT TEXT in Estonian;
 template = """
  You are a marketing copywriter with 20 years of experience. You are analyzing customer's background to write personalized product description that only this customer will receive; 
     PRODUCT input text: {content};
@@ -59,7 +59,7 @@ with col1:
         ('9-15', '16-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-100'))
     
 def get_communication_channel():
-    input_text = st.text_input(label="Customers main communication_channel", placeholder="email, social media, blogs, telephone, radio, television, print media, ...", key="communication_channel_input")
+    input_text = st.text_input(label="Customers main communication channel", placeholder="email, social media, blogs, telephone, radio, television, print media, ...", key="communication_channel_input")
     return input_text
 
 communication_channel_input = get_communication_channel()
