@@ -9,10 +9,10 @@ template = """
     PRODUCT input text: {content};
     CUSTOMER age group (y): {agegroup};
     CUSTOMER main communication channel: {communication_channel};
-    TASK: Write a product description that is tailored into this customer's Age group and communication_channel. Use age group specific slang.;
+    TASK: Write a product description that is tailored into this customer's Age group and communication channel. Use age group specific slang.;
     FORMAT: Present the result in the following order: (PRODUCT DESCRIPTION), (BENEFITS), (USE CASE);
     PRODUCT DESCRIPTION: describe the product in 5 sentences;
-    BENEFITS: describe in 3 sentences why this product is perfect considering customers age group and communication_channel;
+    BENEFITS: describe in 3 sentences why this product is perfect considering customers age group and communication channel;
     USE CASE: write a story in 5 sentences, of an example weekend activity taking into account communication_channel {communication_channel} and age {agegroup}, write a story in first person, example "I started my Saturday morning with ...";
 """
 
